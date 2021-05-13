@@ -1,0 +1,70 @@
+<html lang ="en">
+<head>
+	<title>Contact Me</title>
+	<link href = "Form.css" rel = "stylesheet">
+</head>
+<body>
+	<div class = "menu" id = "myHeader">
+      <ul>
+        <li class = "logo"><a href = "CensorshipIn2020Election.html"><img src = "PoliSciLogo.png"></li></a>
+        <li><a href = "CensorshipIn2020Election.html">Home</li></a>
+        <li><a href = "RightSide.html">Right Side of Censorship</li></a>
+        <li><a href = "LeftSide.html">From the Left</li></a>
+        <li><a href = "MyOpinion.html">My Opinion</li></a>
+        <li><a href = "FAQ.html">FAQ</li></a>
+        <li><a href = "Form.html" class = "signup-button"><span>Form</span></a></li></span>
+      </ul>
+    </div>
+    <br><br>
+	<section>
+		<form action = "https://webdevbasics.net/scripts/demo.php" method = "post">
+			<fieldset>
+				<legend>Contact Us</legend>
+
+				<label for = "fName">Your Full Name: </label>
+				<input type = "text" name = "fName" id = "fName">
+
+				<label for = "email">Email: </label>
+				<input type = "text" name = "email" id = "email">
+
+				<label for = "phone">Phone Number: </label>
+				<input type = "text" name = "phone" id = "phone">
+
+				<label for = "comments">Comments: </label>
+				<textarea name = "fName" id = "fName"></textarea>
+				<br><br>
+
+				<div class = "checks">
+					<p>Preferred Method of Contact:</p>
+
+					<input type = "radio" name = "methodOfContact" id = "contactEmail" value = "email">
+					<label for = "contactEmail">Email</label>
+
+					<input type = "radio" name = "methodOfContact" id = "contactSMS" value = "SMS">
+					<label for = "SMS">SMS Message</label>
+
+					<input type = "radio" name = "methodOfContact" id = "contactPhone" value = "phone">
+					<label for = "contactPhone">Phone Call</label>
+				</div>
+
+				<input type = "submit" id = "submit" value = "Submit">
+			</fieldset>
+	</section>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
